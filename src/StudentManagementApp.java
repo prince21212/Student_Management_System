@@ -9,10 +9,13 @@ class Student {
     private String rollNumber;
     private String grade;
 
-    public Student(String name, String rollNumber, String grade) {
+    private int age;
+
+    public Student(String name, String rollNumber, String grade, int age) {
         this.name = name;
         this.rollNumber = rollNumber;
         this.grade = grade;
+        this.age = age;
     }
 
     public String getName() {
@@ -26,6 +29,8 @@ class Student {
     public String getGrade() {
         return grade;
     }
+
+    public int getAge() { return age; }
 }
 
 class StudentManagementSystem {
